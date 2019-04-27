@@ -5,8 +5,7 @@ jQuery.getJSON(stateDemographicsUrl, function (data) {
   let stateStyle = function (feature) {
   let numberOfFemales = feature.properties.FEMALES //
   let stateColor = 'pink' //
-  let numberOfMales= feature.properties.MALES
-  if ( numberOfFemales < numberOfMales ) { stateColor = 'blue' } //
+  if ( numberOfFemales < 3132934) { stateColor = 'blue' } //
   return {
     color: stateColor, //
     weight: 1,
@@ -16,10 +15,8 @@ jQuery.getJSON(stateDemographicsUrl, function (data) {
 let onEachFeature = function (feature, layer) {
   let name = feature.properties.STATE_NAME
     let numberOfFemales = feature.properties.FEMALES
-    let numberOfMales= feature.properties.MALES
-    layer.bindPopup('Number of Females ' + name + ': ' + numberOfFemales + '2010 Census average: 3,132,934' )
+    layer.bindPopup('Number of Females '2010 Census average: 3132934' )
    }
-   layer.bindPopup('Number of Males ' + name + ': ' + numberOfMales + '2010 Census average: 3,029,942.08' )
  }
   let geojsonOptions= {
     style:stateStyle,
