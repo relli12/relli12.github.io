@@ -15,7 +15,7 @@ jQuery.getJSON(stateDemographicsUrl, function (data) {
 let onEachFeature = function (feature, layer) {
   let name = feature.properties.STATE_NAME
     let numberOfFemales = feature.properties.FEMALES
-    layer.bindPopup('Number of Females + '2010 Census average: 3132934' )
+    layer.bindPopup('Number of Females + 'Census average: 3132934' )
    }
  }
   let geojsonOptions= {
@@ -24,3 +24,4 @@ let onEachFeature = function (feature, layer) {
   }
   L.geoJSON(data, geojsonOptions).addTo(stateMapByGender)
 })
+
