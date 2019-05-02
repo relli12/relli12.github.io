@@ -4,7 +4,7 @@ let batonRougeTrafficIncidentsUrl = 'https://services9.arcgis.com/SDQDNhpG8jikA0
 jQuery.getJSON(batonRougeTrafficIncidentsUrl, function (data) {
 let trafficMap= L.map('map4').setView([30.45, -91.19], 4)
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png').addTo(trafficMap)
-jQuery.getJSON(stateDemographicsUrl, function (data) {
+jQuery.getJSON(batonRougeTrafficIncidentsUrl, function (data) {
   let stateStyle = function (feature) {
   let batonRougeTrafficIncidents = feature.properties.Baton_Rouge_Traffic_Incidents //
   let stateColor = 'pink' //
@@ -25,4 +25,5 @@ let onEachFeature = function (feature, layer) {
     onEachFeature: onEachFeature
   }
   L.geoJSON(data, geojsonOptions).addTo(trafficMap)
+})
 })
