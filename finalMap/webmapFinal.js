@@ -26,3 +26,4 @@ let onEachFeature = function (feature, layer) {
   }
   L.geoJSON(data, geojsonOptions).addTo(trafficMap)
 })
+})
