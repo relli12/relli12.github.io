@@ -1,6 +1,6 @@
 let trafficMap = L.map('map4').setView([30.4515, -91.1871], 4)
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png').addTo(trafficMap)
-let batonRougeTrafficIncidentsUrl = 'https://arcg.is/0rrLj9'
+let batonRougeTrafficIncidentsUrl = 'https://lsuga.maps.arcgis.com/home/item.html?id=1646b187d91948249c031e39f2c7939e'
 // jQuery.getJSON(batonRougeTrafficIncidentsUrl, function (data) {
 // let trafficMap= L.map('map4').setView([30.4515, -91.1871], 4)
 // L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png').addTo(trafficMap)
