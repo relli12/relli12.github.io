@@ -20,6 +20,11 @@ let onEachFeature = function (feature, layer) {
     let batonRougeTrafficIncidents = feature.properties.Baton_Rouge_Traffic_Incidents
     layer.bindPopup('FILE#' + 'CRASH DATE'+'TOT VEH'+'DISTRICT'+'ZONE'+'SUBZONE'+'STREET#'+'STREET NAME'+'STREET NAME'+'FORMATTED STREET' )
  }
+ let trafficIncidentsNearSouthernCampus=L.polygon([
+   [30.543096,-91.20610],
+   [30.526674,-91.102056],
+   [30.501922,-91.149096]
+ ]).addTo(trafficMap)
   let geojsonOptions= {
     style:stateStyle,
     onEachFeature: onEachFeature
