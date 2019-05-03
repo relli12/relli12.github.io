@@ -7,10 +7,10 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/
 jQuery.getJSON(batonRougeTrafficIncidentsUrl, function (data) {
   let stateStyle = function (feature) {
   let batonRougeTrafficIncidents = feature.properties.Baton_Rouge_Traffic_Incidents //
-  let stateColor = 'pink' //
-  if ( batonRougeTrafficIncidents > 4) { stateColor = 'blue' } //
+  let incidentColor = 'pink' //
+  if ( batonRougeTrafficIncidents > 4) { incidentColor = 'blue' } //
   return {
-    color: stateColor, //
+    color: incidentColor, //
     weight: 1,
     fillOpacity: 0.2
   }
