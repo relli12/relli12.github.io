@@ -25,6 +25,11 @@ let onEachFeature = function (feature, layer) {
    [30.526674,-91.102056],
    [30.501922,-91.149096]
  ]).addTo(trafficMap)
+ let trafficIncidentsNearLSUCampus=L.polygon([
+   [30.411965,-91.194843],
+   [30.433186,-91.157895],
+   [30.386532,-91.159627]
+ ]).addTo(trafficMap)
   let geojsonOptions= {
     style:stateStyle,
     onEachFeature: onEachFeature
