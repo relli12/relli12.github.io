@@ -8,7 +8,7 @@ jQuery.getJSON(batonRougeTrafficIncidentsUrl, function (data) {
   let incidentStyle = function (feature) {
     let batonRougeTrafficIncidents = feature.properties.LIGHTING //
     let incidentColor = 'red' //
-    if (LIGHTING=DAYLIGHT) { incidentColor = 'blue' } //
+    if (LIGHTING=DARK) { incidentColor = 'blue' } //
     return {
       color: incidentColor, //
       weight: 1,
