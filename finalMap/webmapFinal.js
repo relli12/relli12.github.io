@@ -18,7 +18,7 @@ jQuery.getJSON(batonRougeTrafficIncidentsUrl, function (data) {
   let onEachFeature = function (feature, layer) {
     let name = feature.properties.Baton_Rouge_Traffic_Incidents
     let batonRougeTrafficIncidents = feature.properties.Baton_Rouge_Traffic_Incidents
-    layer.bindPopup('FILE#' + 'CRASH DATE'+'TOT VEH'+'DISTRICT'+'ZONE'+'SUBZONE'+'STREET#'+'STREET NAME'+'STREET NAME'+'FORMATTED STREET' )
+    layer.bindPopup('FILE#'+'CRASH DATE'+'TOT VEH'+'DISTRICT'+'ZONE'+'SUBZONE'+'STREET#'+'STREET NAME'+'STREET NAME'+'FORMATTED STREET' )
   }
   let trafficIncidentsNearSouthernCampus=L.polygon([
     [30.543096,-91.20610],
