@@ -7,7 +7,7 @@ let batonRougeTrafficIncidentsUrl = 'https://data.brla.gov/resource/epwd-efpa.ge
 jQuery.getJSON(batonRougeTrafficIncidentsUrl, function (data) {
   let incidentStyle = function (feature) {
     let batonRougeTrafficIncidents = feature.properties.LIGHTING //
-    let incidentColor = 'pink' //
+    let incidentColor = 'red' //
     if (LIGHTING=DAYLIGHT) { incidentColor = 'blue' } //
     return {
       color: incidentColor, //
