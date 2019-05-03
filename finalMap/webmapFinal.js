@@ -6,9 +6,9 @@ let batonRougeTrafficIncidentsUrl = 'https://data.brla.gov/resource/epwd-efpa.js
 // L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png').addTo(trafficMap)
 jQuery.getJSON(batonRougeTrafficIncidentsUrl, function (data) {
   let incidentStyle = function (feature) {
-    let batonRougeTrafficIncidents = feature.properties. TOTVEH //
+    let batonRougeTrafficIncidents = feature.properties. TOT_VEH //
     let incidentColor = 'pink' //
-    if ( TOTVEH > 4) { incidentColor = 'blue' } //
+    if ( TOT_VEH > 4) { incidentColor = 'blue' } //
     return {
       color: incidentColor, //
       weight: 1,
