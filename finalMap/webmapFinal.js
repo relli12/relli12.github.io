@@ -1,6 +1,6 @@
 let trafficMap = L.map('map4').setView([30.4515, -91.1871], 4)
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png').addTo(trafficMap)
-let batonRougeTrafficIncidentsUrl = 'https://arcg.is/0rrLj9'
+let batonRougeTrafficIncidentsUrl = 'https://data.brla.gov/resource/epwd-efpa.json'
 // jQuery.getJSON(batonRougeTrafficIncidentsUrl, function (data) {
 // let trafficMap= L.map('map4').setView([30.4515, -91.1871], 4)
 // L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png').addTo(trafficMap)
@@ -36,3 +36,4 @@ jQuery.getJSON(batonRougeTrafficIncidentsUrl, function (data) {
   }
   L.geoJSON(data, geojsonOptions).addTo(trafficMap)
 })
+
