@@ -1,6 +1,6 @@
 let trafficMap = L.map('map4').setView([30.4515, -91.1871], 4)
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png').addTo(trafficMap)
-let batonRougeTrafficIncidentsUrl = 'https://services9.arcgis.com/SDQDNhpG8jikA0D1/arcgis/rest/services/Baton_Rouge_Traffic_Incidents_2010_to_2019_RE/FeatureServer'
+let batonRougeTrafficIncidentsUrl = 'https://arcg.is/0rrLj9'
 // jQuery.getJSON(batonRougeTrafficIncidentsUrl, function (data) {
 // let trafficMap= L.map('map4').setView([30.4515, -91.1871], 4)
 // L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png').addTo(trafficMap)
