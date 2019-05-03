@@ -5,7 +5,7 @@ jQuery.getJSON(batonRougeTrafficIncidentsUrl, function (data) {
 let trafficMap= L.map('map4').setView([30.4515, -91.1871], 4)
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png').addTo(trafficMap)
 jQuery.getJSON(batonRougeTrafficIncidentsUrl, function (data) {
-  let stateStyle = function (feature) {
+  let incidentStyle = function (feature) {
   let batonRougeTrafficIncidents = feature.properties.Baton_Rouge_Traffic_Incidents //
   let incidentColor = 'pink' //
   if ( batonRougeTrafficIncidents > 4) { incidentColor = 'blue' } //
